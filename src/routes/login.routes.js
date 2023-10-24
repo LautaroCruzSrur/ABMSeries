@@ -1,13 +1,8 @@
 import { Router } from "express";
+import {postLogin} from "../controllers/login.js";
 
 const router = Router();
 
-router.post("/login" , (res,req) => {
-    const user = req.body.user;
-    const password = req.body.password;
-    const database= req.body.database;
-    const host = req.body.host;
-    const port = req.body.port;
-});
+router.post("/login", postLogin);
 
-const dbconection = { user , password ,database ,host ,port};
+export default router;
