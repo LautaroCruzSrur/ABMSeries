@@ -1,6 +1,7 @@
 import { Sequelize } from "sequelize";
 
-export const conect = new Sequelize('series' , 'root' , '', {
+
+export const conect = new Sequelize('series' , 'LautaroCruz' , 'Lautaro18!', {
     host: 'localhost',
     dialect: 'mysql',
     port: 3306
